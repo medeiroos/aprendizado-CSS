@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .item2{
+            background-color: greenyellow;
+            margin: 5px;
+            color: black;
+            text-align: center;
+            flex: 1;
+        }
+        .item3{
+            background-color: blue;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .strectch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 400px;
+            justify-content: center;
+        }
+        .central .item3{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+    <p>CENTER</p>
+    <section class="container center">
+        <div class="item">Ah, quem me dera ser poeta</div>
+        <div class="item">Pra cantar em seu louvor</div>
+        <div class="item">Belas canções, lindos poemas</div>
+        <div class="item">Doces frases de amor</div>
+    </section>
+
+    <p>STRECTCH</p>
+    <section class="container strectch">
+        <div class="item">Ah, quem me dera ser poeta</div>
+        <div class="item">Pra cantar em seu louvor</div>
+        <div class="item">Belas canções, lindos poemas</div>
+        <div class="item">Doces frases de amor</div>
+    </section>
+    
+    <p>FLEX-START</p>
+    <section class="container start">
+        <div class="item">Ah, quem me dera ser poeta</div>
+        <div class="item">Pra cantar em seu louvor</div>
+        <div class="item">Belas canções, lindos poemas</div>
+        <div class="item">Doces frases de amor</div>
+    </section>
+    
+    <p>FLEX-END</p>
+    <section class="container end">
+        <div class="item">Ah, quem me dera ser poeta</div>
+        <div class="item">Pra cantar em seu louvor</div>
+        <div class="item">Belas canções, lindos poemas</div>
+        <div class="item">Doces frases de amor</div>
+    </section>
+    
+    <p>BASELINE</p>
+    <section class="container baseline">
+        <div class="item">Ah, quem me dera ser poeta</div>
+        <div class="item">Pra cantar em seu louvor</div>
+        <div class="item">Belas canções, lindos poemas</div>
+        <div class="item">Doces frases de amor</div>
+    </section>
+    <h1>COLUMN</h1>
+    <p>CENTER (COLUMN)</p>
+    <section class="container center column">
+        <div class="item2">Ah, quem me dera ser poeta</div>
+        <div class="item2">Pra cantar em seu louvor</div>
+        <div class="item2">Belas canções, lindos poemas</div>
+        <div class="item2">Doces frases de amor</div>
+    </section>
+
+    <p>STRECTCH (COLUMN)</p>
+    <section class="container strectch column">
+        <div class="item2">Ah, quem me dera ser poeta</div>
+        <div class="item2">Pra cantar em seu louvor</div>
+        <div class="item2">Belas canções, lindos poemas</div>
+        <div class="item2">Doces frases de amor</div>
+    </section>
+    
+    <p>FLEX-START (COLUMN)</p>
+    <section class="container start column">
+        <div class="item2">Ah, quem me dera ser poeta</div>
+        <div class="item2">Pra cantar em seu louvor</div>
+        <div class="item2">Belas canções, lindos poemas</div>
+        <div class="item2">Doces frases de amor</div>
+    </section>
+    
+    <p>FLEX-END (COLUMN)</p>
+    <section class="container end column">
+        <div class="item2">Ah, quem me dera ser poeta</div>
+        <div class="item2">Pra cantar em seu louvor</div>
+        <div class="item2">Belas canções, lindos poemas</div>
+        <div class="item2">Doces frases de amor</div>
+    </section>
+    
+    <p>BASELINE (COLUMN)</p>
+    <section class="container baseline column">
+        <div class="item2">Ah, quem me dera ser poeta</div>
+        <div class="item2">Pra cantar em seu louvor</div>
+        <div class="item2">Belas canções, lindos poemas</div>
+        <div class="item2">Doces frases de amor</div>
+    </section>
+    <p>ALINHAMENTO CENTRAL</p>
+    <section class="container central center">
+        <div class="item3">Ah, quem me dera ser poeta
+            Pra cantar em seu louvor
+            Belas canções, lindos poemas
+            Doces frases de amor</div>
+    </section>
+</body>
+</html>

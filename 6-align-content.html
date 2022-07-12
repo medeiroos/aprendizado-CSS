@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Aling content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color:white;
+            border: 2px solid white;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .start{
+            align-content: flex-start;
+        }
+        .end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>STRETCH</p>
+    <div class="container stretch">
+        <div class="item">Neste mundo em que toda a informação,</div>
+        <div class="item">música, cinema e poesia</div>
+        <div class="item">dão a volta ao mundo em questão de segundos,</div>
+        <div class="item">sucessos efêmeros aparecem todos os dias,</div>
+        <div class="item">e por isto nunca foi tão salutar seguir a caminhar</div>
+        <div class="item">como os mais velhos e mais sábios:</div>
+        <div class="item">devagar e sempre.</div>
+    </div>
+
+    <p>CENTER</p>
+    <div class="container center">
+        <div class="item">Neste mundo em que toda a informação,</div>
+        <div class="item">música, cinema e poesia</div>
+        <div class="item">dão a volta ao mundo em questão de segundos,</div>
+        <div class="item">sucessos efêmeros aparecem todos os dias,</div>
+        <div class="item">e por isto nunca foi tão salutar seguir a caminhar</div>
+        <div class="item">como os mais velhos e mais sábios:</div>
+        <div class="item">devagar e sempre.</div>
+    </div>
+
+    <p>FLEX-START</p>
+    <div class="container start">
+        <div class="item">Neste mundo em que toda a informação,</div>
+        <div class="item">música, cinema e poesia</div>
+        <div class="item">dão a volta ao mundo em questão de segundos,</div>
+        <div class="item">sucessos efêmeros aparecem todos os dias,</div>
+        <div class="item">e por isto nunca foi tão salutar seguir a caminhar</div>
+        <div class="item">como os mais velhos e mais sábios:</div>
+        <div class="item">devagar e sempre.</div>
+    </div>
+
+    <p>FLEX-END</p>
+    <div class="container end">
+        <div class="item">Neste mundo em que toda a informação,</div>
+        <div class="item">música, cinema e poesia</div>
+        <div class="item">dão a volta ao mundo em questão de segundos,</div>
+        <div class="item">sucessos efêmeros aparecem todos os dias,</div>
+        <div class="item">e por isto nunca foi tão salutar seguir a caminhar</div>
+        <div class="item">como os mais velhos e mais sábios:</div>
+        <div class="item">devagar e sempre.</div>
+    </div>
+    
+    <p>SPACE-AROUND</p>
+    <div class="container space-around">
+        <div class="item">Neste mundo em que toda a informação,</div>
+        <div class="item">música, cinema e poesia</div>
+        <div class="item">dão a volta ao mundo em questão de segundos,</div>
+        <div class="item">sucessos efêmeros aparecem todos os dias,</div>
+        <div class="item">e por isto nunca foi tão salutar seguir a caminhar</div>
+        <div class="item">como os mais velhos e mais sábios:</div>
+        <div class="item">devagar e sempre.</div>
+    </div>
+
+    <p>SPACE-BETWEEN</p>
+    <div class="container space-between">
+        <div class="item">Neste mundo em que toda a informação,</div>
+        <div class="item">música, cinema e poesia</div>
+        <div class="item">dão a volta ao mundo em questão de segundos,</div>
+        <div class="item">sucessos efêmeros aparecem todos os dias,</div>
+        <div class="item">e por isto nunca foi tão salutar seguir a caminhar</div>
+        <div class="item">como os mais velhos e mais sábios:</div>
+        <div class="item">devagar e sempre.</div>
+    </div>
+</body>
+</html>
